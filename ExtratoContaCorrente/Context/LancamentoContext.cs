@@ -1,17 +1,16 @@
 ﻿using ExtratoContaCorrente.Model;
 using System.Collections.Generic;
-using
 using Microsoft.EntityFrameworkCore;
 
 namespace ExtratoContaCorrente.Context
 {
-    public class LançamentoContext : DbContext
+    public class LancamentoContext : DbContext
     {
-        public LançamentoContext(DbContextOptions<LançamentoContext> options)
+        public LancamentoContext(DbContextOptions<LancamentoContext> options)
         : base(options)
         {
         }
 
-        public DbSet<Lançamento> Lançamentos { get; set; }
+        public DbSet<Lancamento> Lancamentos { get; set; }
     }
 }
